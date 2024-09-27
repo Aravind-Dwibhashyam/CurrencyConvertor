@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "CurrencyConvertor_backend": {
+      "main": "src/CurrencyConvertor_backend/main.mo",
+      "type": "motoko"
+    },
+    "CurrencyConvertor_frontend": {
+      "dependencies": [
+        "CurrencyConvertor_backend"
+      ],
+      "source": [
+        "src/CurrencyConvertor_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "CurrencyConvertor_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
